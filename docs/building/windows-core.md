@@ -38,6 +38,9 @@ Import-Module ./build.psm1
 Start-PSBootstrap
 ```
 
+*(Note: If you receive warnings about the script not being signed, you can enable running the script for the current powershell session with
+`pwsh -ExecutionPolicy Unrestricted`; but [be conscious of the security implications](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2).)*
+
 Or you can call `Install-Dotnet` directly:
 
 ```powershell
